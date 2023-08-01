@@ -9,7 +9,7 @@ To this end, we have a [`partition-api`][api], written entirely in Rust, which l
 - [`thesis-code`][tc] repository is the highest level where everything is set up the same way we had it on our machines. It makes heavy use of submodules to combine all the various parts into one package. It also provides docker compose and mprocs config files for even easier management! One should consider starting here!
 - [`rust-crates`][rc] repository sets up all our rust crates so that you don't have to worry about it! It combines the following:
     - The [`partition-api`][api] which is the client facing side of our solution. This one also implemented the actual partitioning algorithms.
-    - The [`local-robot-mat`][lrm] library crate, which provides the foundation upon which to build the partitioning algorithms.
+    - The [`local-robot-map`][lrm] library crate, which provides the foundation upon which to build the partitioning algorithms.
 - [`ros2-client`][ros2] is our client in ROS2 Python.
 - [`python-client`][pc] was out testing playground to probe the Rust API. The [ros2 client][ros2] is essentially a fancy wrapper around the POST request method found here.
 - [`simulation-map-empty`](https://github.com/ISM-Thesis-MultiRobot-Partitioning/simulation-map-empty) and [`simulation-map-expand`](https://github.com/ISM-Thesis-MultiRobot-Partitioning/simulation-map-expand) are essentially helper ROS2 nodes for managing the robot maps.
@@ -20,7 +20,7 @@ A read-only link to [our report][report] on Overleaf further allows diving deepe
 
 [tc]: https://github.com/ISM-Thesis-MultiRobot-Partitioning/thesis-code
 [rc]: https://github.com/ISM-Thesis-MultiRobot-Partitioning/rust-crates
-[rlm]: https://github.com/ISM-Thesis-MultiRobot-Partitioning/local-robot-map
+[lrm]: https://github.com/ISM-Thesis-MultiRobot-Partitioning/local-robot-map
 [api]: https://github.com/ISM-Thesis-MultiRobot-Partitioning/partition-api
 [ros2]: https://github.com/ISM-Thesis-MultiRobot-Partitioning/ros2-client
 [pc]: https://github.com/ISM-Thesis-MultiRobot-Partitioning/python-client
